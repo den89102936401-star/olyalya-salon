@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>О-ля-ля — мужская парикмахерская</title>
+<meta name="description" content="Мужская парикмахерская «О-ля-ля» в Брянске. Стрижки, укладки, окраска, мелирование, маникюр, наращивание ногтей и ресниц.">
+<style>
+:root{
+  --bg:#0d0d10; --card:#17171c; --soft:#222229; --text:#fff;
+  --muted:#b7b7c2; --accent:#d9a56c; --accent2:#f1c99a;
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.5}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:10;background:#0d0d10e8;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff12}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:800;letter-spacing:.5px}
+.logo span{color:var(--accent)}
+nav{display:flex;gap:26px;color:#ddd;font-size:14px}
+nav a:hover{color:var(--accent2)}
+.phone{font-weight:700}
+.hero{min-height:760px;padding-top:72px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:600px;height:600px;right:-180px;top:80px;background:radial-gradient(circle,#8a4d2430,transparent 65%)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
+.eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:3px;font-size:13px;font-weight:700}
+h1{font-size:clamp(52px,8vw,92px);line-height:.95;margin:18px 0}
+h1 span{color:var(--accent)}
+.hero p{font-size:20px;color:var(--muted);max-width:580px}
+.buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 23px;border-radius:12px;font-weight:800;border:1px solid #ffffff20}
+.btn.primary{background:var(--accent);color:#17110b;border-color:var(--accent)}
+.btn.secondary{background:#ffffff08}
+.btn:hover{transform:translateY(-2px)}
+.visual{height:470px;border-radius:28px;background:linear-gradient(145deg,#2a2522,#101012);border:1px solid #ffffff15;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.visual .scissors{font-size:170px;opacity:.9;transform:rotate(-18deg)}
+.badge{position:absolute;bottom:24px;left:24px;background:#0d0d10df;padding:14px 17px;border-radius:14px;border:1px solid #ffffff18}
+section{padding:95px 0}
+.section-head{margin-bottom:40px}
+.section-head h2{font-size:42px;margin:8px 0}
+.section-head p{color:var(--muted);margin:0}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.service{background:var(--card);border:1px solid #ffffff0d;border-radius:18px;padding:25px;min-height:150px}
+.icon{font-size:28px}
+.service h3{margin:12px 0 5px;font-size:20px}
+.service p{margin:0;color:var(--muted);font-size:14px}
+.about{background:#121216}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:center}
+.about-box{background:linear-gradient(145deg,#242027,#151519);border-radius:24px;padding:45px;min-height:300px;display:flex;align-items:center;justify-content:center;font-size:100px}
+.about h2{font-size:42px;margin:0 0 15px}
+.about p{color:var(--muted);font-size:18px}
+.contact{background:linear-gradient(135deg,#1d1713,#0d0d10)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.contact-card{background:#ffffff08;border:1px solid #ffffff12;border-radius:20px;padding:30px}
+.contact-card h3{margin-top:0}
+.contact-line{display:block;padding:12px 0;color:#ddd;border-bottom:1px solid #ffffff10}
+.contact-line:last-child{border:0}
+footer{padding:28px 0;color:#888;text-align:center;font-size:14px;border-top:1px solid #ffffff0d}
+@media(max-width:800px){
+ nav{display:none}.hero{min-height:auto;padding:130px 0 70px}
+ .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+ .visual{height:320px}.services{grid-template-columns:1fr 1fr}
+}
+@media(max-width:520px){h1{font-size:55px}.services{grid-template-columns:1fr}section{padding:70px 0}.phone{font-size:13px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#">О-ля-<span>ля</span></a>
+    <nav>
+      <a href="#services">Услуги</a>
+      <a href="#about">О салоне</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="phone" href="tel:+79102951112">8 (910) 295-11-12</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="eyebrow">Мужская парикмахерская · Брянск</div>
+      <h1>Стиль, который<br><span>начинается с тебя.</span></h1>
+      <p>«О-ля-ля» — место, где можно привести себя в порядок, обновить образ и уделить время себе.</p>
+      <div class="buttons">
+        <a class="btn primary" href="tel:+79102951112">Записаться</a>
+        <a class="btn secondary" href="#services">Посмотреть услуги</a>
+      </div>
+    </div>
+    <div class="visual">
+      <div class="scissors">✂</div>
+      <div class="badge">📍 Брянск · пр. Станке Димитрова, 61/1</div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Что мы делаем</div>
+      <h2>Услуги</h2>
+      <p>Выбирайте услугу и записывайтесь по телефону.</p>
+    </div>
+    <div class="services">
+      <article class="service"><div class="icon">✂️</div><h3>Стрижки</h3><p>Аккуратная стрижка и обновление образа.</p></article>
+      <article class="service"><div class="icon">💈</div><h3>Укладки</h3><p>Укладка для повседневного и особого случая.</p></article>
+      <article class="service"><div class="icon">🎨</div><h3>Окраска волос</h3><p>Обновление цвета и работа с образом.</p></article>
+      <article class="service"><div class="icon">✨</div><h3>Мелирование</h3><p>Осветление отдельных прядей и создание акцентов.</p></article>
+      <article class="service"><div class="icon">💅</div><h3>Маникюр</h3><p>Уход за руками и аккуратный маникюр.</p></article>
+      <article class="service"><div class="icon">👁️</div><h3>Наращивание</h3><p>Наращивание ногтей и ресниц.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container about-grid">
+    <div class="about-box">💈</div>
+    <div>
+      <div class="eyebrow">О-ля-ля</div>
+      <h2>Здесь важны вы и ваш образ.</h2>
+      <p>Удобное место в Брянске, где можно записаться на услуги парикмахерской и ухода за собой. Позвоните нам, чтобы уточнить свободное время и записаться.</p>
+      <a class="btn primary" href="tel:+79102951112">Позвонить и записаться</a>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="contact">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Мы ждём вас</div>
+      <h2>Контакты</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>📞 Запись</h3>
+        <a class="contact-line" href="tel:+79102951112">8 (910) 295-11-12</a>
+        <p style="color:#aaa">Нажмите на номер с телефона, чтобы сразу позвонить.</p>
+      </div>
+      <div class="contact-card">
+        <h3>📍 Адрес</h3>
+        <div class="contact-line">пр. Станке Димитрова, 61/1</div>
+        <div class="contact-line">Брянск, Брянская обл., 241028</div>
+        <a class="btn secondary" style="margin-top:16px" target="_blank" href="https://www.google.com/maps/search/?api=1&query=пр.%20Станке%20Димитрова%2C%2061%2F1%2C%20Брянск">Открыть карту</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© О-ля-ля · Мужская парикмахерская · Брянск</footer>
+</body>
+</html>
